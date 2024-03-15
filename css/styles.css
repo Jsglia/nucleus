@@ -36,12 +36,12 @@ img {
     max-width: 100%;
     display: block;
 }
-.contenedor {
+
+[class$="__contenedor"] {
     max-width: 120rem;
     margin: 0 auto;
     width: 90%;
 }
-
 
 .header {
     background-image: url(../img/header_bg.svg);
@@ -67,12 +67,6 @@ img {
     .header {
         background-size: 110rem;
     }
-}
-
-.header__contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-    width: 90%;
 }
 
 @media (min-width: 768px) {
@@ -154,5 +148,25 @@ img {
     .header__boton {
         padding: 1rem 3rem;
         display: inline-block;
+    }
+}
+
+/*  MAIN  */
+
+.nucleus {
+    margin-top: 3rem;
+}
+
+.nucleus__heading {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    .nucleus__grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 5rem;
+        align-items: center;
     }
 }
